@@ -1,0 +1,59 @@
+<div id="content">
+  <p>
+  products works!
+</p>
+
+
+</div>
+<!--
+<app-productcard></app-productcard>
+-->
+
+
+<swiper [config]="config" [(index)]="index">
+  <div>
+    <div>  Swiper slide content
+    Lorem ipsum dolor sit amet, ex stet mutat est. Sea ea quodsi persius laoreet, ut eam accusam invidunt perpetua. Iuvaret admodum phaedrum ad has, mel odio omittam adversarium cu. Quidam facete in vim, te ipsum ridens sadipscing ius, vis saepe audire epicuri an. Viris epicuri eu usu, eu mei labore veritus alienum, at vis elit movet apeirian.
+    </div>
+  <div>
+    <img width="300px" src="https://images.unsplash.com/photo-1523559695898-5262d13a600c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7debaac32a8db03bbb57fa3d005aa6cf&auto=format&fit=crop&w=2382&q=80" />
+    </div>
+  </div>
+  <div>
+    <div>  Swiper slide content 2
+    Lorem ipsum dolor sit amet, ex stet mutat est. Sea ea quodsi persius laoreet, ut eam accusam invidunt perpetua. Iuvaret admodum phaedrum ad has, mel odio omittam adversarium cu. Quidam facete in vim, te ipsum ridens sadipscing ius, vis saepe audire epicuri an. Viris epicuri eu usu, eu mei labore veritus alienum, at vis elit movet apeirian.
+    </div>
+    <div>
+      <img width="300px" src="https://images.unsplash.com/photo-1517231426114-1ed5cdbe7248?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4c5e812e186dbdafcde57ae1fa6329b9&auto=format&fit=crop&w=1350&q=80" />
+    </div>
+  </div>
+
+  <div>
+  <div>  Swiper slide content 3
+  Lorem ipsum dolor sit amet, ex stet mutat est. Sea ea quodsi persius laoreet, ut eam accusam invidunt perpetua. Iuvaret admodum phaedrum ad has, mel odio omittam adversarium cu. Quidam facete in vim, te ipsum ridens sadipscing ius, vis saepe audire epicuri an. Viris epicuri eu usu, eu mei labore veritus alienum, at vis elit movet apeirian.
+  </div>
+  <div>
+  <img width="300px" src="https://images.unsplash.com/photo-1494257473705-09a5a19d04af?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a8630a45d2003aa0fe3d2f5ff376d9ec&auto=format&fit=crop&w=1350&q=80" />
+  </div>
+  </div>
+</swiper>
+
+<div *ngIf="2+1 ===4 then primaryBlock else secondBlock">
+<p>on affiche le code</p>
+</div>
+<ng-template #primaryBlock>Primary text to show</ng-template>
+<ng-template #secondBlock>second text to show</ng-template>
+
+<div [hidden]="false">
+  on cache
+</div>
+
+<!-- <div [ngSwitchCase]="ete">
+  <div *ngSwitchCase="ete" > vacances au ski </div>
+  <div *ngSwitchCase="hiver"> vacances au soleil </div>
+</div> -->
+
+<div *ngFor="let person of people">
+  {{person.name}} - {{person.age}} years old.
+</div>
+
